@@ -93,8 +93,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  HAL_Delay(100);
-	  GPIOB -> ODR ^= GPIO_PIN_0;
+	  HAL_Delay(50);
+	  GPIOB -> ODR ^= GPIO_PIN_0;  // Flash Green Led
+	  GPIOF -> ODR ^= GPIO_PIN_4;  // Flash Green Led
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
